@@ -1,6 +1,0 @@
----
-
-- name: geerlingguy.rabbitmq
-  version: "1.0.0"
-
-- name: community.rabbitmq
