@@ -1,8 +1,8 @@
 import pika
 
-from examples.pika.constants import SIMPLE_QUEUE
+from examples.pika.constants import SIMPLE_QUEUE, RABBITMQ_HOST
 
-params = pika.ConnectionParameters(host='0.0.0.0', port=5672)
+params = pika.ConnectionParameters(host=RABBITMQ_HOST, port=5672)
 
 
 def callback(ch, method, properties, body):

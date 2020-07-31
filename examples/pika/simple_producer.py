@@ -1,9 +1,9 @@
 import pika
 from datetime import datetime
 
-from examples.pika.constants import SIMPLE_QUEUE
+from examples.pika.constants import SIMPLE_QUEUE, RABBITMQ_HOST
 
-params = pika.ConnectionParameters(host='0.0.0.0')
+params = pika.ConnectionParameters(host=RABBITMQ_HOST)
 with pika.BlockingConnection(params) as conn:
     channel = conn.channel()
 
